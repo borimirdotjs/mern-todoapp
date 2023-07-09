@@ -1,0 +1,29 @@
+@use "../../../styles/colors";
+
+.container {
+  form {
+    display: flex;
+    flex-direction: column;
+    textarea,
+    input {
+      padding: 0.5rem;
+    }
+    textarea {
+      width: 100%;
+      resize: none;
+      height: 7rem;
+    }
+    button {
+      margin-top: 0.5rem;
+      padding: 0.5rem 0rem;
+      border-radius: 8px;
+      border: none;
+      background-color: colors.$main-green;
+      color: white;
+      cursor: pointer;
+      &:disabled {
+        background-color: grey;
+      }
+    }
+  }
+}

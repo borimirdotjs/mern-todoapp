@@ -2,12 +2,14 @@ const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
 const todoRoutes = require("./routes/todos");
+const cors = require("cors");
 
 //express
 const app = express();
 
 //middleware
 app.use(express.json());
+app.use(cors());
 //api routes
 app.use("/api/todos", todoRoutes);
 

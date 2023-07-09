@@ -1,0 +1,16 @@
+@use "../../styles/colors";
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  padding: 0.5rem 0.5rem;
+  gap: 0.5rem;
+  height: 100%;
+  aside,
+  section {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: colors.$main-shadow;
+  }
+}
