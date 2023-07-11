@@ -83,7 +83,7 @@ const TodoList = () => {
           >
             <div>
               <h4>{todo.title}</h4>
-              <span>
+              <span className={styles.created_at}>
                 {formatDistanceToNow(new Date(todo.createdAt), {
                   addSuffix: true,
                 })}

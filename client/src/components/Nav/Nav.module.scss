@@ -9,6 +9,10 @@
   justify-content: space-between;
   box-shadow: colors.$main-shadow;
   .logo_container {
+    a {
+      text-decoration: none;
+      color: colors.$main-black;
+    }
     .logo {
       font-weight: 900;
       font-size: 3rem;
@@ -16,6 +20,27 @@
       .dot {
         color: colors.$main-green;
       }
+    }
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+      color: colors.$main-black;
+      &:hover {
+        transform: scale(1.03);
+        color: grey;
+      }
+    }
+    .logout {
+      color: colors.$main-green;
+      padding: 0.3rem 1rem;
+      border: 1px solid colors.$main-green;
+      border-radius: 5px;
+      background-color: rgb(234, 255, 234);
+      cursor: pointer;
     }
   }
 }
